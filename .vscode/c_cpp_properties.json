@@ -1,15 +1,14 @@
-// xv6-riscv/.vscode/c_cpp_properties.json
 {
     "configurations": [
         {
             "name": "Linux",
-            // "includePath": [],
-            // "defines": [],
-            // "compilerPath": "/usr/bin/riscv64-linux-gnu-gcc",
-            // "cStandard": "gnu17",
-            // "intelliSenseMode": "${default}",
-            "compileCommands": "/home/dim/xv6-riscv/.vscode/c_cpp_properties.json"
-            // "configurationProvider": "ms-vscode.makefile-tools"
+            "compileCommands": "/home/dim/xv6-riscv/.vscode/c_cpp_properties.json",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}",
+                "${workspaceFolder}/kernel",
+                "${workspaceFolder}/user"
+            ]
         }
     ],
     "version": 4
