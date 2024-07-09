@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Linux",
-            "compileCommands": "/home/dim/xv6-riscv/.vscode/c_cpp_properties.json",
+            "compileCommands": "/home/dim/xv6-riscv/.vscode/compile_commands.json",
             "includePath": [
                 "${default}",
                 "${workspaceFolder}",
