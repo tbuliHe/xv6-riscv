@@ -23,6 +23,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int getprocnum(void);
+void memtest(void);
 
 
 // ulib.c

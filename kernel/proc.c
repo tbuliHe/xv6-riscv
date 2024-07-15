@@ -695,3 +695,22 @@ sys_getprocnum(void)
   }
   return count;
 }
+uint64
+sys_memtest(void){
+  printf("This is my memory allocation test.\n");
+  void* p1 = mem_malloc(8);
+  void* p2 = mem_malloc(64);
+  void* p3 = mem_malloc(30);
+  void* p4 = mem_malloc(1024);
+  void* p5 = mem_malloc(8*1024);
+  void* p6 = mem_malloc(8*1024*1023);
+  mem_free(p2,0);
+  mem_free(p3,0);
+  mem_free(p5,0);
+  mem_free(p1,0);
+  mem_free(p4,0);
+  p6 = mem_malloc(8*1024*1023);
+  mem_free(p6,0);
+  printf("Test end.\n");
+  return 0;
+}
