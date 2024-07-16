@@ -125,7 +125,7 @@ void *mem_malloc(int n){
 
   if(tree[index] < size){
     printf("Memory is not enough, please free in time!\n");
-    release(&memlock);  // 释放锁
+    release(&memlock); 
     return (void*)0;
   }
 
@@ -136,7 +136,7 @@ void *mem_malloc(int n){
       index = right_leaf(index);
     }else{
       printf("Your Memory is short for allocating %d Byte", n);
-      release(&memlock);  // 释放锁
+      release(&memlock);
       return (void*)0;
     }
   }
